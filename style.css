@@ -1,0 +1,89 @@
+body,h1,h2,h3,h4,h5,h6,p,a,span{
+    font-family: 'Crimson Pro', serif;
+}
+
+/* Header Css */
+.header-top{
+    background: #d1d0cc;
+}
+.header-top img {
+	width: 91px;
+}
+.mein-menu li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #414141;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    transition: .4s;
+}
+.mein-menu li a:hover{
+    color: #3763eb;
+}
+.mein-menu li a::after{
+    content: "";
+    position: absolute;
+    top: 149%;
+    left: 27%;
+    height: 3px;
+    width: 40px;
+    background: #3763eb;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    transform: scaleX(0);
+    transform-origin: left center;
+}
+.mein-menu li:hover a::after{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.header-top button {
+	color: #3763eb;
+	padding: 8px 30px;
+	border-radius: 50px;
+	margin-left: 17px;
+	font-size: 17px;
+	width: 158px;
+}
+/* Slider Css */
+.slider-image {
+	background: url(./image/hero-image.jpg) no-repeat center;
+	background-size: cover;
+	border-radius: 50% 0 50% 50%;
+	height: 120%;
+	width: 150%;
+	margin-left: 10px;
+	position: relative;
+	margin-top: -150px;
+	z-index: -1;
+}
+
+.slider-content-wrap {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+.slider-text{
+    width: 90%;
+}
+.slider-text h2 {
+	font-size: 46px;
+	font-weight: 800;
+}
+.slider-text p {
+	font-size: 19px;
+	line-height: 1.2em;
+	font-weight: 200;
+	padding: 10px 0;
+}
+.slider-text a{
+    color: #fff;
+    background: #3763eb;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 17px;
+}
